@@ -18,7 +18,7 @@ Experience
 
 ### Black Beard Labs (formerly Veteran Studio), Waynesboro, VA
 
-#### Developer / Consultant - 2017 - 2018
+#### Developer / Consultant - 2017-2018
 
 Worked closely with the founder in setting up the company. Assisted in selecting and configuring the infrastructure, promoting the business,
 and hiring employees.
