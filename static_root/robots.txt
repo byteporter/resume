@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: http://jameslind.info/sitemap.xml
+Sitemap: http://jameslind.info/sitemap.xml

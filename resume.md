@@ -3,8 +3,8 @@ James Lind
 
 |                                                         |                                                        |
 | ------------------------------------------------------- | -----------------------------------------------------: |
-| [james@byteporter.com](mailto:james@byteporter.com)     |                                     253 Morningside Dr |
-| [jameslind.info](http://jameslind.info)                 |                                 Mount Sidney, VA 24467 |
+| [james@byteporter.com](mailto:james@byteporter.com)     |                                 2300 Old Spanish Trail |
+| [jameslind.info](https://jameslind.info)                |                                      Houston, TX 77054 |
 
 Education
 ---------
@@ -16,11 +16,18 @@ Bucknell University, Lewisburg, PA
 Experience
 ----------
 
+### Black Beard Labs (formerly Veteran Studio), Waynesboro, VA
+
+#### Developer / Consultant - 2017 - 2018
+
+Worked closely with the founder in setting up the company. Assisted in selecting and configuring the infrastructure, promoting the business,
+and hiring employees.
+
 ### Innovative Refrigeration Systems, Lyndhurst, VA
 
 #### Web Developer - 2016-2017
 
-Developed a REST service managing users, permissions, authorization, and authentication.  Written in Laravel Lumen slim framework on a LAMP stack.
+Developed a REST service managing users, permissions, authorization, and authentication. Written in Laravel Lumen slim framework on a LAMP stack.
 
 Developed business reports incorporating data from both MySQL application databases and a Microsoft SQL database hosting proprietary data.
 
@@ -73,7 +80,7 @@ I enjoy learning new languages and have experience with many.  I have profession
 * CSS
 * Powershell, Bash
 
-Learning many languages has also given me experience with many major programming paradigms including object oriented, functional, procedural, and declarative.  I also have experience implementing my own small domain specific languages including lexers, parsers, and compilers.
+Learning many languages has also given me experience with many major programming paradigms including object oriented, functional, procedural, and declarative. I also have experience implementing my own small domain specific languages including lexers, parsers, and compilers.
 
 ### Specific Solutions and Software Packages
 
