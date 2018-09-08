@@ -82,6 +82,8 @@ I enjoy learning new languages and have experience with many.  I have profession
 
 Learning many languages has also given me experience with many major programming paradigms including object oriented, functional, procedural, and declarative. I also have experience implementing my own small domain specific languages including lexers, parsers, and compilers.
 
+I have a particular fondness for the languages that marry a more functional syntax to existing platforms and libraries such as F# and Scala. I used Go to create this resume application and appreciate its productivity in getting much accomplished with a small length of code. I appreciate its opinionated design, which I feel enables an unfamiliar developer to quickly read and understand code from another author.
+
 ### Specific Solutions and Software Packages
 
 * Laravel (including Lumen), CodeIgniter Frameworks on Linux, Apache, MySQL, PHP stack
