@@ -10,17 +10,17 @@ resume.pdf: init
 		--output $(OUT_DIR)/$$FILE_NAME.tex $$FILE_NAME.md > /dev/null; \
 	mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1;
 
-all: resume.pdf resume.docx resume.rtf
+all: resume.pdf #resume.docx resume.rtf
 
-resume.docx: init
-	FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-	echo $$FILE_NAME.docx; \
-	pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.docx;
+# resume.docx: init
+# 	FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+# 	echo $$FILE_NAME.docx; \
+# 	pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.docx;
 
-resume.rtf: init
-	FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-	echo $$FILE_NAME.rtf; \
-	pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf;
+# resume.rtf: init
+# 	FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+# 	echo $$FILE_NAME.rtf; \
+# 	pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf;
 
 init: dir version
 
