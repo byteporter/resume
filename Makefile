@@ -44,7 +44,7 @@ clean:
 $(OUT_DIR):
 	mkdir -p $(OUT_DIR)
 
-$(OUT_DIR)/%.tex: %.md | $(OUT_DIR)
+$(OUT_DIR)/%.tex: $(STYLE).tex %.md | $(OUT_DIR)
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n";
 	pandoc --standalone --template $(STYLE).tex \
 		--from markdown --to context \
