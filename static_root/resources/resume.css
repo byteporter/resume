@@ -54,7 +54,7 @@
   p,
   h2,
   h3 {
-    orphcans: 3;
+    orphans: 3;
     widows: 3;
   }
 
