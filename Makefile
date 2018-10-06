@@ -1,7 +1,7 @@
 # This Makefile targets GNU make
 
 OUT_DIR = output
-STYLE = resume
+STYLE = pdftemplate
 FILE_NAME = resume
 PAPER_SIZE = letter
 
