@@ -1,9 +1,12 @@
 # This Makefile targets GNU make
 
-OUT_DIR = output
-STYLE = pdftemplate
-FILE_NAME = resume
-PAPER_SIZE = letter
+# TODO:
+# 1) Try to change rtf and docx generation to use the ConTeXt file as its source rather than markdown
+
+OUT_DIR ?= output
+STYLE ?= pdftemplate
+FILE_NAME ?= resume
+PAPER_SIZE ?= letter
 
 ifeq ($(shell echo `pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`), 2)
 	PANDOC_VERSION_2 := true
