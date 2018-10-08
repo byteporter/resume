@@ -229,7 +229,7 @@ h2 {
 /* Main div for border to extend to 50% from bottom left corner */
 h2::after {
   content:""; 
-  background: #fafafa; 
+  background: #d0d0d0; 
   position: absolute; 
   bottom: 0; 
   left: 0; 
