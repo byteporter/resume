@@ -66,9 +66,7 @@ Designed the electrical circuit and authored software for a scientific instrumen
 Skills
 ------
 
-### Multi-paradigm Polyglot
-
-I enjoy learning new languages and have experience with many.  I have professional experience with:
+**Polyglot**
 
 * C# .NET
 * SQL: Microsoft T-SQL and MySQL
@@ -76,11 +74,32 @@ I enjoy learning new languages and have experience with many.  I have profession
 * Assembly, C, and C++
 * JavaScript
 * CSS
-* Powershell, Bash
+* Powershell, Bash, POSIX sh
+* Familiarity with many others
 
-Learning many languages has also given me experience with many major programming paradigms including object oriented, functional, procedural, and declarative. I also have experience implementing my own small domain specific languages including lexers, parsers, and compilers.
+**Paradigms**
 
-### Specific Solutions and Software Packages
+* Object oriented
+* Functional
+* Procedural
+* Declarative
+
+**Miscellaneous**
+
+* Create domain specific languages
+* Strong belief in and experience with standards
+* Automated build systems
+* Source control: Team Foundation, Git, and Subversion
+
+**Areas of Interest**
+
+* DevOps
+* Standards
+* Continuous Delivery/Integration
+* Automated Testing
+* Domain Specific Languages
+
+**Specific Solutions and Software Packages**
 
 * Laravel (including Lumen), CodeIgniter Frameworks on Linux, Apache, MySQL, PHP stack
 * Kubernetes, CoreOS, Terraform, Typhoon, DigitalOcean, Docker, Vagrant
