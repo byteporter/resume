@@ -2,8 +2,6 @@
 
 # TODO:
 # 1) Try to change rtf and docx generation to use the ConTeXt file as its source rather than markdown
-# 2) Move Go build to Makefile
-# 3) Create Dockerfile for build environment
 
 OUT_DIR ?= output
 INSTALL_DIR ?= static_root
