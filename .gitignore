@@ -4,13 +4,14 @@
 *.dll
 *.so
 *.dylib
+resume
 
 # Test binary, build with `go test -c`
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-
 *.log
 
-output/
+*.tuc
+tools/genhardcopy/resume.tex
