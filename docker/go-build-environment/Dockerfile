@@ -5,14 +5,3 @@ LABEL MAINTAINER="james@byteporter.com"
 
 RUN set -x \
     && apk add --no-cache --virtual .build-deps git make
-
-# WORKDIR /go/src/github.com/byteporter/resume
-
-# COPY resume.go /go/src/github.com/byteporter/resume
-# COPY Makefile /go/src/github.com/byteporter/resume
-
-# RUN set -x \
-#     && go get ./...
-
-# RUN set -x \
-#     && make application

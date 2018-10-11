@@ -19,14 +19,4 @@ RUN set -x \
 
 RUN set -x \
     OSFONTDIR="/usr/share/fonts//" mtxrun --script fonts --reload --force
-
-# WORKDIR /build
-
-# COPY resume.md /build
-# COPY pdftemplate.tex /build
-# COPY Makefile /build
-
-# RUN set -x \
-#     && make pdf \
-#     && make docx \
-#     && make rtf
+    
