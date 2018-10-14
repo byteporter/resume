@@ -16,14 +16,14 @@ Experience
 
 ### Black Beard Labs (formerly Veteran Studio), Waynesboro, VA
 
-#### Developer / Consultant - 2017-2018
+#### Developer / Consultant -- 2017-2018
 
 Worked closely with the founder in setting up the company. Assisted in selecting and configuring the infrastructure, promoting the business,
 and hiring employees.
 
 ### Innovative Refrigeration Systems, Lyndhurst, VA
 
-#### Web Developer - 2016-2017
+#### Web Developer -- 2016-2017
 
 Developed a REST service managing users, permissions, authorization, and authentication. Written in Laravel Lumen slim framework on a LAMP stack.
 
@@ -33,13 +33,13 @@ As the most experienced member of the team, I worked hard to teach newer develop
 
 ### Pacific Crest Trail, CA-OR-WA, USA
 
-#### Through Hiker - 2015
+#### Through Hiker -- 2015
 
 Spent six months hiking the Pacific Crest Trail from the Mexican border near Campo, CA to the Canadian border in the wilderness of northern Washington.
 
 ### MidwayUSA, Inc., Columbia, MO
 
-#### Database Administrator - 2013-2015
+#### Database Administrator -- 2013-2015
 
 Researched and executed a company-wide upgrade from SQL Server 2010 to SQL Server 2012. Determined requirements for and set up new servers and SQL Server installations. Migrated existing databases to new servers.
 
@@ -49,7 +49,7 @@ Updated legacy SQL jobs to work properly with the redundant databases required f
 
 Worked directly with Application Developers to collect and analyze business requirements, design data structures, and write high performing, reliable, and accurate stored procedures which the Application Developers then utilized from their applications.
 
-#### Application Developer - 2010-2013
+#### Application Developer -- 2010-2013
 
 Created and maintained backend services to provide data for frontend developers.
 
@@ -57,7 +57,7 @@ Mapped the existing process and redesigned the entire credit card processing bus
 
 ### Zeta-Meter, Inc., Staunton, VA
 
-#### Embedded Engineer - 2006-2010
+#### Embedded Engineer -- 2006-2010
 
 Designed and implemented a Windows based data acquisition and analysis program in C#.
 
@@ -66,7 +66,7 @@ Designed the electrical circuit and authored software for a scientific instrumen
 Skills
 ------
 
-**Polyglot**
+#### Polyglot
 
 * C# .NET
 * SQL: Microsoft T-SQL and MySQL
@@ -77,21 +77,21 @@ Skills
 * Powershell, Bash, POSIX sh
 * Familiarity with many others
 
-**Paradigms**
+#### Paradigms
 
 * Object oriented
 * Functional
 * Procedural
 * Declarative
 
-**Miscellaneous**
+#### Miscellaneous
 
 * Create domain specific languages
 * Strong belief in and experience with standards
 * Automated build systems
 * Source control: Team Foundation, Git, and Subversion
 
-**Areas of Interest**
+#### Areas of Interest
 
 * DevOps
 * Standards
@@ -99,7 +99,7 @@ Skills
 * Automated Testing
 * Domain Specific Languages
 
-**Specific Solutions and Software Packages**
+#### Specific Solutions and Software Packages
 
 * Laravel (including Lumen), CodeIgniter Frameworks on Linux, Apache, MySQL, PHP stack
 * Kubernetes, CoreOS, Terraform, Typhoon, DigitalOcean, Docker, Vagrant

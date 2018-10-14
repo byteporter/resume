@@ -146,13 +146,14 @@ h2,
 
 h3,
 .modest-h3 {
+  /* font-weight: bold; */
   font-size: 1.999rem;
 }
 
 h4,
 .modest-h4 {
-  font-style: italic;
-  font-size: 1.4rem;
+  /* font-weight: bold; */
+  font-size: 1.6rem;
 }
 
 h5,

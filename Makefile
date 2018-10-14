@@ -1,8 +1,5 @@
 # This Makefile targets GNU make
 
-# TODO:
-# 1) Try to change rtf and docx generation to use the ConTeXt file as its source rather than markdown
-
 SHELL := /bin/sh
 
 STYLE ?= pdftemplate
