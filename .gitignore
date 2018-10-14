@@ -13,5 +13,7 @@ resume
 *.out
 *.log
 
+output/
 *.tuc
 tools/genhardcopy/resume.tex
+manifest

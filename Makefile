@@ -8,7 +8,7 @@ SHELL := /bin/sh
 
 STYLE ?= pdftemplate
 PAPER_SIZE ?= letter
-LOG_DIR ?= makelog
+INSTALL_DIR ?= output/
 
 ifeq ($(shell echo `pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`), 2)
 	PANDOC_VERSION_2 := true
@@ -29,19 +29,35 @@ all: resume hardcopy
 
 hardcopy: web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf
 
-# install: all
-# 	@printf "$(BLU)Installing output files...$(END)\n";
-# 	@cp $(OUT_DIR)/$(FILE_NAME).pdf $(INSTALL_DIR);
-# 	@cp $(OUT_DIR)/$(FILE_NAME).rtf $(INSTALL_DIR);
-# 	@cp $(OUT_DIR)/$(FILE_NAME).docx $(INSTALL_DIR);
-# 	@printf "$(GRN)Done!$(END)\n\n";
+install: all | $(INSTALL_DIR)
+	@printf "$(BLU)Installing output files...$(END)\n";
+	@cp -r web/ $(INSTALL_DIR);
+	@find $(INSTALL_DIR)web -printf "%d\t%p\n" >manifest;
+	@cp resume $(INSTALL_DIR);
+	@find $(INSTALL_DIR)resume -printf "%d\t%p\n" >>manifest;
+	@sort -r -o manifest manifest;
+	@printf "$(GRN)Done!$(END)\n\n";
 
-# uninstall:
-# 	@printf "$(BLU)Uninstalling output files...$(END)\n";
-# 	@rm $(INSTALL_DIR)/$(FILE_NAME).pdf ||:;
-# 	@rm $(INSTALL_DIR)/$(FILE_NAME).rtf ||:;
-# 	@rm $(INSTALL_DIR)/$(FILE_NAME).docx ||:;
-# 	@printf "$(GRN)Done!$(END)\n\n";
+$(INSTALL_DIR):
+	@mkdir -p $(INSTALL_DIR);
+
+uninstall: manifest
+	@printf "$(BLU)Uninstalling output files...$(END)\n";
+	@while IFS= read -r line <&3; do \
+		FILENAME="$$(printf '%s' "$$line" | cut -f2)"; \
+		if [ -f "$$FILENAME" ]; then \
+			rm "$$FILENAME"; \
+		fi; \
+	done 3< manifest;
+	@while IFS= read -r line <&3; do \
+		DIRNAME="$$(printf '%s' "$$line" | cut -f2)"; \
+		if [ -d "$$DIRNAME" ]; then \
+			rmdir "$$DIRNAME" ||:; \
+		fi; \
+	done 3< manifest;
+	@rmdir $(INSTALL_DIR) ||:;
+	@rm manifest;
+	@printf "$(GRN)Done!$(END)\n\n";
 
 clean:
 	@printf "$(BLU)Cleaning up files...$(END)\n";
@@ -60,7 +76,7 @@ clean:
 
 resume: cmd/resume/resume.go
 	@printf "$(BLU)***Building application $(CYN)$@$(BLU)...$(END)\n";
-	go build -o $@ $^;
+	CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' -o $@ $^;
 	@printf "$(GRN)***Done!$(END)\n\n";
 
 tools/genhardcopy/resume.tex: tools/genhardcopy/$(STYLE).tex web/resume.md

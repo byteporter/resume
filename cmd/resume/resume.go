@@ -1,15 +1,13 @@
 package main
 
 import (
+	"html/template"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 
-	"html/template"
-
 	"github.com/byteporter/blackfriday"
-
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
