@@ -4,7 +4,8 @@ SHELL := /bin/sh
 
 STYLE ?= pdftemplate
 PAPER_SIZE ?= letter
-INSTALL_DIR ?= output/
+INSTALL_DIR ?= output/usr/share/resume/
+BIN_DIR ?= output/go/bin/
 
 ifeq ($(shell echo `pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`), 2)
 	PANDOC_VERSION_2 := true
@@ -25,19 +26,24 @@ all: resume hardcopy
 
 hardcopy: web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf
 
-install: all | $(INSTALL_DIR)
-	@printf "$(BLU)Installing output files...$(END)\n";
-	@cp -r web/ $(INSTALL_DIR);
-	@find $(INSTALL_DIR)web -printf "%d\t%p\n" >manifest;
-	@cp resume $(INSTALL_DIR);
-	@find $(INSTALL_DIR)resume -printf "%d\t%p\n" >>manifest;
-	@sort -r -o manifest manifest;
-	@printf "$(GRN)Done!$(END)\n\n";
+install: manifest
 
 $(INSTALL_DIR):
 	@mkdir -p $(INSTALL_DIR);
 
-uninstall: manifest
+$(BIN_DIR):
+	@mkdir -p $(BIN_DIR);
+
+manifest: resume web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf | $(INSTALL_DIR) $(BIN_DIR)
+	@printf "$(BLU)Installing output files...$(END)\n";
+	@cp -r web/ $(INSTALL_DIR);
+	@find $(INSTALL_DIR)web -printf "%d\t%p\n" >manifest;
+	@cp resume $(BIN_DIR);
+	@find $(BIN_DIR)resume -printf "%d\t%p\n" >>manifest;
+	@sort -r -o manifest manifest;
+	@printf "$(GRN)Done!$(END)\n\n";
+
+uninstall:
 	@printf "$(BLU)Uninstalling output files...$(END)\n";
 	@while IFS= read -r line <&3; do \
 		FILENAME="$$(printf '%s' "$$line" | cut -f2)"; \
