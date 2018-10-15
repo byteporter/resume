@@ -81,25 +81,25 @@ tools/genhardcopy/resume.tex: tools/genhardcopy/$(STYLE).tex web/resume.md
 		--from markdown --to context \
 		--variable papersize=$(PAPER_SIZE) \
 		--output $@ web/resume.md;
-	@printf "$(GRN)Done!$(END)\n\n"
+	@printf "$(GRN)Done!$(END)\n\n";
 
 web/static-root/resume.pdf: tools/genhardcopy/resume.tex
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n";
 	mtxrun --path=$(dir $<) --script context --result=$(notdir $@) $(notdir $<);
 	mv $(dir $<)$(notdir $@) $@;
-	@printf "$(GRN)Done!$(END)\n\n"
+	@printf "$(GRN)Done!$(END)\n\n";
 
 web/static-root/resume.rtf: web/resume.md
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n";
 	pandoc --standalone $(if $(PANDOC_VERSION_2),--from markdown+smart,--smart) $< --output $@;
-	@printf "$(GRN)Done!$(END)\n\n"
+	@printf "$(GRN)Done!$(END)\n\n";
 
 web/static-root/resume.docx: web/resume.md
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n";
 	pandoc --standalone $(if $(PANDOC_VERSION_2),--from markdown+smart,--smart) $< --output $@;
-	@printf "$(GRN)Done!$(END)\n\n"
+	@printf "$(GRN)Done!$(END)\n\n";
 
 web/static-root/resume.rst: web/resume.md
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n";
-	pandoc --standalone --from markdown --to rst $< --output $@
-	@printf "$(GRN)Done!$(END)\n\n"
+	pandoc --standalone --from markdown --to rst $< --output $@;
+	@printf "$(GRN)Done!$(END)\n\n";
