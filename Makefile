@@ -36,8 +36,8 @@ $(BIN_DIR):
 
 manifest: resume web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf | $(INSTALL_DIR) $(BIN_DIR)
 	@printf "$(BLU)Installing output files...$(END)\n"
-	@cp -r web/ $(INSTALL_DIR)
-	@find $(INSTALL_DIR)web -printf "%d\t%p\n" >manifest
+	@cp -r web/. $(INSTALL_DIR)
+	@find $(INSTALL_DIR) -printf "%d\t%p\n" >manifest
 	@cp resume $(BIN_DIR)
 	@find $(BIN_DIR)resume -printf "%d\t%p\n" >>manifest
 	@sort -r -o manifest manifest
