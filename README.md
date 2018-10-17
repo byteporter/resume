@@ -24,4 +24,4 @@ Another benefit is that this resume is open source and available for potential e
 
 ## How to use
 
-Use go to build the application, which is a single file `resume.go`
+Write your resume content in Markdown format in the file `web/resume.md`. Website specific content (e.g. the title for the website) can be controlled with the gohtml template file `web/templates/resume.gohtml`. Style the website with the file `web/static-root/resources/resume.css`. Style the pdf document with the ConTeXt template `tools/genhardcopy/pdftemplate.tex`.
