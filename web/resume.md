@@ -68,50 +68,12 @@ Skills
 
 #### Polyglot
 
-* C# .NET
-* SQL: Microsoft T-SQL and MySQL
-* PHP
-* Assembly, C, and C++
-* JavaScript
-* CSS
-* Powershell, Bash, POSIX sh
-* Familiarity with many others
-
-#### Paradigms
-
-* Object oriented
-* Functional
-* Procedural
-* Declarative
-
-#### Miscellaneous
-
-* Create domain specific languages
-* Strong belief in and experience with standards
-* Automated build systems
-* Source control: Team Foundation, Git, and Subversion
-
-#### Areas of Interest
-
-* DevOps
-* Standards
-* Continuous Delivery/Integration
-* Automated Testing
-* Domain Specific Languages
+Professional experience with Assembly (PIC and Freescale microcontrollers), C, C++, C# .NET, T-SQL, MySQL, PHP, JavaScript, CSS, Bash, POSIX shell, and PowerShell. Personal experience with many others. Always excited to learn more.
 
 #### Specific Solutions and Software Packages
 
-* Laravel (including Lumen), CodeIgniter Frameworks on Linux, Apache, MySQL, PHP stack
-* Kubernetes, CoreOS, Terraform, Typhoon, DigitalOcean, Docker, Vagrant
-* Epicor9 (Enterprise Resource Planning)
-* Microsoft SQL server
-    * General Administration
-    * T-SQL Language (Stored Procedures, Views, etc.)
-    * SQL Server Reporting Services (SSRS)
-    * SQL Server Integration Services (SSIS)
-* Splunk
-* Microsoft Silverlight, WPF, MVC, WCF Services on .NET, Primarily C#
-* Microsoft DirectX (2D and 3D)
-* Microsoft Visual C++
-* FreeRTOS embedded real time operating system
-* Freescale (formerly Motorola) HC08 and HCS12, Microchip PIC Microcontrollers in C, PicBasic Pro, and Assembly
+Linux-Apache-MySQL-PHP (LAMP) stack: Laravel, its lightweight subset Lumen, and CodeIgniter. DevOps and Infrastructure: Docker, Kubernetes, CoreOS, Terraform, Typhoon, and Vagrant. Microsoft SQL Server: general administration, SQL Server Reporting Services (SSRS) based reports, SQL Server Integration Services (SSIS) jobs. Splunk and Datadog for monitoring. Microsoft Silverlight, WPF, MVC, DirectX, and WCF Services. FreeRTOS real time operating system for embedded controllers.
+
+#### Areas of Focus
+
+Writing clean and understandable code, documentation, requirements gathering, standards, DevOps, continuous delivery and integration, and automated testing.
