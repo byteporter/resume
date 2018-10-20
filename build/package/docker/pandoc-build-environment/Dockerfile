@@ -10,6 +10,7 @@ RUN set -x \
     fonts-open-sans \
     fontconfig \
     make \
+    m4 \
     haskell-platform \
     context \
     context-modules \
