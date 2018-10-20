@@ -7,4 +7,4 @@ RUN set -x \
     && apk add --no-cache --virtual .build-deps git make
 
 WORKDIR /go/src/github.com/byteporter/resume/
-ENTRYPOINT [ "/bin/sh", "-c" ]
+ENTRYPOINT [ "/bin/sh", "-c", "\"$@\"", "_" ]

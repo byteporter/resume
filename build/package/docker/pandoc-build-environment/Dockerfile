@@ -22,4 +22,4 @@ RUN set -x \
     OSFONTDIR="/usr/share/fonts//" mtxrun --script fonts --reload --force
     
 WORKDIR /go/src/github.com/byteporter/resume/
-ENTRYPOINT [ "/bin/sh", "-c" ]
+ENTRYPOINT [ "/bin/sh", "-c", "\"$@\"", "_" ]
