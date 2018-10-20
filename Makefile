@@ -21,7 +21,7 @@ END=\e[0m
 
 .PHONY: all hardcopy install uninstall
 
-all: resume hardcopy web/static-root/resources/resume.css
+all: resume hardcopy web/static-root/resources/resume.min.css
 
 hardcopy: web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf
 
@@ -33,7 +33,7 @@ $(INSTALL_DIR):
 $(BIN_DIR):
 	@mkdir -p $(BIN_DIR)
 
-manifest: resume web/static-root/resources/resume.css web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf | $(INSTALL_DIR) $(BIN_DIR)
+manifest: resume web/static-root/resources/resume.min.css web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf | $(INSTALL_DIR) $(BIN_DIR)
 	@printf "$(BLU)Installing output files...$(END)\n"
 	@cp -r web/. $(INSTALL_DIR)
 	@find $(INSTALL_DIR) -printf "%d\t%p\n" >manifest
@@ -75,9 +75,14 @@ clean:
 # Uncomment this if you need to keep the .tex file for inspection
 # .PRECIOUS: tools/genhardcopy/resume.tex
 
-web/static-root/resources/resume.css: tools/style-templates/resume.css.m4 tools/style-templates/shared-style-config.m4
+tools/style-templates/resume.css: tools/style-templates/resume.css.m4 tools/style-templates/shared-style-config.m4
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
 	m4 -P -I$(dir $<) $< >$@
+	@printf "$(GRN)***Done!$(END)\n\n"
+
+web/static-root/resources/resume.min.css: tools/style-templates/resume.css
+	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
+	uglifycss $< >$@
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 tools/genhardcopy/pdftemplate.tex: tools/style-templates/pdftemplate.tex.m4 tools/style-templates/shared-style-config.m4

@@ -1,4 +1,4 @@
-FROM debian:buster AS BuildResumeDocuments
+FROM debian:buster
 LABEL MAINTAINER="james@byteporter.com"
 
 ENV LANG='C.UTF-8'

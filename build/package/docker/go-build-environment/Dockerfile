@@ -1,4 +1,4 @@
-FROM golang:1.11-alpine3.8 AS BuildResumeApp
+FROM golang:1.11-alpine3.8
 LABEL MAINTAINER="james@byteporter.com"
 
 # ENV CGO_ENABLED=0
