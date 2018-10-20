@@ -21,3 +21,5 @@ RUN set -x \
 RUN set -x \
     OSFONTDIR="/usr/share/fonts//" mtxrun --script fonts --reload --force
     
+WORKDIR /go/src/github.com/byteporter/resume/
+ENTRYPOINT [ "/bin/sh", "-c" ]

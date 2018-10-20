@@ -5,3 +5,6 @@ LABEL MAINTAINER="james@byteporter.com"
 
 RUN set -x \
     && apk add --no-cache --virtual .build-deps git make
+
+WORKDIR /go/src/github.com/byteporter/resume/
+ENTRYPOINT [ "/bin/sh", "-c" ]
