@@ -1,7 +1,7 @@
 [submodule "blackfriday"]
         path = vendor/github.com/byteporter/blackfriday
         url = git@github.com:byteporter/resume.git
-        branch = development
+        branch = master
 
 [submodule "handlers"]
         path = vendor/github.com/gorilla/handlers
