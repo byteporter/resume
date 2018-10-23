@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/byteporter/blackfriday"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"github.com/russross/blackfriday"
 )
 
 type justFilesFilesystem struct {
@@ -48,7 +48,7 @@ func (vh resourceFileHandler) ServeHTTP(w http.ResponseWriter, req *http.Request
 
 func (rh resumeHandler) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	b, _ := ioutil.ReadFile(`resume.md`)
-	var output = blackfriday.MarkdownCommon(b)
+	var output = blackfriday.Run(b)
 	t, _ := template.ParseFiles("templates/resume.gohtml")
 	w.Header().Set("Vary", "Accept-Encoding")
 	t.Execute(w, template.HTML(output))

@@ -7,3 +7,10 @@
         path = vendor/github.com/gorilla/mux
         url = https://github.com/gorilla/mux
         branch = master
+[submodule "vendor/github.com/russross/blackfriday"]
+	path = vendor/github.com/russross/blackfriday
+	url = git@github.com:russross/blackfriday
+	branch = v2
+[submodule "vendor/github.com/shurcooL/sanitized_anchor_name"]
+	path = vendor/github.com/shurcooL/sanitized_anchor_name
+	url = git@github.com:shurcooL/sanitized_anchor_name.git
