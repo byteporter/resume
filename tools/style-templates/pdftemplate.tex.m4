@@ -13,9 +13,11 @@ $endif$
 
 \setupcolor[hex]
 \definecolor[rulecolor][h=__COLOR_BREAK]
+\definecolor[sectioncolor][h=__HEADER_COLOR]
+\definecolor[contentcolor][h=__BODY_COLOR]
 
 % Enable hyperlinks
-\setupinteraction[state=start, color=sectioncolor]
+\setupinteraction[state=start, color=contentcolor]
 
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
@@ -32,18 +34,19 @@ $endif$
 \definefontfeature [default] [default] [onum=no]
 \definefontfamily [resume] [sans] [opensanslight] [bf=file:opensanssemibold]
 
-\setupbodyfont [resume, sans, 11pt]
+\setupbodyfont [resume, sans, 12pt]
 % ====== end fonts
 
 
 \setupwhitespace[medium]
 
-\setupblackrules[width=2.8in, height=1mm, color=rulecolor]
-
 \definefontsize[e]
 \definebodyfontenvironment[default][e=__H1_SIZE(),d=__H2_SIZE(),c=__H3_SIZE(),b=__H4_SIZE(),a=__H5_SIZE()]
+\setupcolors[textcolor=contentcolor]
 
-\setuphead[section]      [style=\tfe, align=middle]
+\setupblackrules[width=2.8in, height=1mm, color=rulecolor]
+
+\setuphead[section]      [style=\tfe, align=middle, color=sectioncolor]
 \setuphead[subsection]   [style=\tfd, align=flushleft,
                           after={\blackrule\hspace}]
 \setuphead[subsubsection][style=\tfc, after={}]
@@ -72,7 +75,7 @@ $endif$
 \setuptables[textwidth=max, HL=none]
 \setupxtable[frame=off,option={stretch,width}]
 
-\setupthinrules[width=15em] % width of horizontal rules
+\setupthinrules[width=15em, color=rulecolor] % width of horizontal rules
 
 \setupdelimitedtext
   [blockquote]

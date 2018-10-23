@@ -23,7 +23,7 @@ END=\e[0m
 
 all: resume hardcopy web/static-root/resources/resume.min.css
 
-hardcopy: web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf
+hardcopy: web/static-root/resume.pdf
 
 install: manifest
 
@@ -33,7 +33,7 @@ $(INSTALL_DIR):
 $(BIN_DIR):
 	@mkdir -p $(BIN_DIR)
 
-manifest: resume web/static-root/resources/resume.min.css web/static-root/resume.pdf web/static-root/resume.docx web/static-root/resume.rtf | $(INSTALL_DIR) $(BIN_DIR)
+manifest: resume web/static-root/resources/resume.min.css web/static-root/resume.pdf web/templates/resume.gohtml | $(INSTALL_DIR) $(BIN_DIR)
 	@printf "$(BLU)Installing output files...$(END)\n"
 	@cp -r web/. $(INSTALL_DIR)
 	@find $(INSTALL_DIR) -printf "%d\t%p\n" >manifest
@@ -63,9 +63,6 @@ uninstall:
 clean:
 	@printf "$(BLU)Cleaning up files...$(END)\n"
 	@rm web/static-root/resume.pdf ||:
-	@rm web/static-root/resume.docx ||:
-	@rm web/static-root/resume.rtf ||:
-	@rm web/static-root/resume.rst ||:
 	@rm tools/genhardcopy/resume.log ||:
 	@rm tools/genhardcopy/resume.tuc ||:
 	@rm tools/genhardcopy/resume.tex ||:
@@ -107,19 +104,4 @@ web/static-root/resume.pdf: tools/genhardcopy/resume.tex
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
 	mtxrun --path=$(dir $<) --script context --result=$(notdir $@) $(notdir $<)
 	mv $(dir $<)$(notdir $@) $@
-	@printf "$(GRN)Done!$(END)\n\n"
-
-web/static-root/resume.rtf: web/resume.md
-	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	pandoc --standalone $(if $(PANDOC_VERSION_2),--from markdown+smart,--smart) $< --output $@
-	@printf "$(GRN)Done!$(END)\n\n"
-
-web/static-root/resume.docx: web/resume.md
-	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	pandoc --standalone $(if $(PANDOC_VERSION_2),--from markdown+smart,--smart) $< --output $@
-	@printf "$(GRN)Done!$(END)\n\n"
-
-web/static-root/resume.rst: web/resume.md
-	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	pandoc --standalone --from markdown --to rst $< --output $@
 	@printf "$(GRN)Done!$(END)\n\n"

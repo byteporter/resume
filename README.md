@@ -18,6 +18,10 @@ In the end however, I recognize that not everyone will agree with me. To suit th
 
 If a resume is a hassle to keep up to date, it's easy to neglect. The content of this resume is maintained in Markdown format. This allows easy focus on the content itself without worrying too much about presentation. Presentation concerns are handled by the CSS file for the online version and the ConTeXt template file for the pdf. Furthermore, the use of text based formats allows me to version control my resume easily using Git.
 
+### Accessibility
+
+We have a social responsibility as content creators to ensure that our creations are accessible to everyone. This is also great because it allows us to reach a wider audience! Because the content itself is kept free of presentation details, it can easily be understood by screen readers allowing the blind to easily access the data. It can also easily be read with limited browsers, e.g. the `elinks` text console browser. Furthermore, the content being so easily parsed means that web crawlers, for example, will have an easier time consuming it and determining what is important, which should aid visibility in search engines.
+
 ### More detail into my skills
 
 Another benefit is that this resume is open source and available for potential employers to delve more deeply into my skills by viewing this repository.
