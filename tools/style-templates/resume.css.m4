@@ -177,6 +177,16 @@ thead {
   display: none;
 }
 
+dt {
+  width: 15%;
+  float: left;
+  clear: left;
+}
+
+dd {
+  margin-left: 15%;
+}
+
 p {
   margin: 1em 0;
 }
