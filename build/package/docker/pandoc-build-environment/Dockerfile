@@ -12,6 +12,7 @@ RUN set -x \
     make \
     m4 \
     haskell-platform \
+    texlive-luatex \
     context \
     context-modules \
     pandoc \
@@ -19,7 +20,6 @@ RUN set -x \
     && apt-get clean
 
 RUN set -x \
-    OSFONTDIR="/usr/share/fonts//" mtxrun --script fonts --reload --force
+    && OSFONTDIR=/usr/share/fonts// mtxrun --script fonts --reload --force
     
-WORKDIR /go/src/github.com/byteporter/resume/
 ENTRYPOINT [ "/bin/sh", "-c", "\"$@\"", "_" ]
