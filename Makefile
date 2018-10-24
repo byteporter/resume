@@ -44,29 +44,28 @@ manifest: resume web/static-root/resources/resume.min.css web/static-root/resume
 
 uninstall:
 	@printf "$(BLU)Uninstalling output files...$(END)\n"
-	@while IFS= read -r line <&3; do \
+	while IFS= read -r line <&3; do \
 		FILENAME="$$(printf '%s' "$$line" | cut -f2)"; \
 		if [ -f "$$FILENAME" ]; then \
 			rm "$$FILENAME"; \
 		fi \
 	done 3< manifest
-	@while IFS= read -r line <&3; do \
+	while IFS= read -r line <&3; do \
 		DIRNAME="$$(printf '%s' "$$line" | cut -f2)"; \
 		if [ -d "$$DIRNAME" ]; then \
 			rmdir "$$DIRNAME" ||:; \
 		fi \
 	done 3< manifest
-	@rmdir $(INSTALL_DIR) ||:
-	@rm manifest
+	rm manifest
 	@printf "$(GRN)Done!$(END)\n\n"
 
 clean:
 	@printf "$(BLU)Cleaning up files...$(END)\n"
-	@rm web/static-root/resume.pdf ||:
-	@rm tools/genhardcopy/resume.log ||:
-	@rm tools/genhardcopy/resume.tuc ||:
-	@rm tools/genhardcopy/resume.tex ||:
-	@rm resume ||:
+	rm web/static-root/resume.pdf ||:
+	rm tools/genhardcopy/resume.log ||:
+	rm tools/genhardcopy/resume.tuc ||:
+	rm tools/genhardcopy/resume.tex ||:
+	rm resume ||:
 	@printf "$(GRN)Done!$(END)\n\n"
 
 # Uncomment this if you need to keep the .tex file for inspection
