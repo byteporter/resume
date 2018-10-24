@@ -73,17 +73,17 @@ clean:
 
 tools/style-templates/resume.css: tools/style-templates/resume.css.m4 tools/style-templates/shared-style-config.m4
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	m4 -P -I$(dir $<) $< --output $@
+	m4 -P -I$(dir $<) $< >/tmp/$(notdir $@) && cp /tmp/$(notdir $@) $@
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 web/static-root/resources/resume.min.css: tools/style-templates/resume.css
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	uglifycss $< >$@
+	uglifycss $< --output $@
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 tools/genhardcopy/pdftemplate.tex: tools/style-templates/pdftemplate.tex.m4 tools/style-templates/shared-style-config.m4
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	m4 -P -I$(dir $<) $(notdir $<) >$@
+	m4 -P -I$(dir $<) $(notdir $<) >/tmp/$(notdir $@) && cp /tmp/$(notdir $@) $@
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 resume: cmd/resume/resume.go
