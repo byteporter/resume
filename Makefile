@@ -73,7 +73,7 @@ clean:
 
 tools/style-templates/resume.css: tools/style-templates/resume.css.m4 tools/style-templates/shared-style-config.m4
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
-	m4 -P -I$(dir $<) $< >$@
+	m4 -P -I$(dir $<) $< --output $@
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 web/static-root/resources/resume.min.css: tools/style-templates/resume.css
