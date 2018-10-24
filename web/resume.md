@@ -6,7 +6,7 @@ James Lind
 |                                                         |                                                        |
 | ------------------------------------------------------- | -----------------------------------------------------: |
 | [james@byteporter.com](mailto:james@byteporter.com)     |                                 2300 Old Spanish Trail |
-| [jameslind.info](https://jameslind.info)                |                                      Houston, TX 77054 |
+| [https://jameslind.info](https://jameslind.info)        |                                      Houston, TX 77054 |
 
 ----------------
 
@@ -19,12 +19,12 @@ Education
 Experience
 ----------
 
-**Black Beard Labs (formerly Veteran Studio)**, Waynesboro, VA
+**Black Beard Labs (formerly Veteran Studio)**, *Waynesboro, VA*
 
 2017-2018
 :   **Developer / Consultant** -- Worked closely with the founder in setting up the company. Assisted in selecting and configuring the infrastructure, promoting the business, and hiring employees.
 
-**Innovative Refrigeration Systems**, Lyndhurst, VA
+**Innovative Refrigeration Systems**, *Lyndhurst, VA*
 
 2016-2017
 :   **Web Developer** -- Developed a REST service managing users, permissions, authorization, and authentication. Written in Laravel Lumen slim framework on a LAMP stack.
@@ -33,12 +33,12 @@ Experience
 
     As the most experienced member of the team, I worked hard to teach newer developers best practices in both technical and career skills.
 
-**Pacific Crest Trail, CA-OR-WA**, USA
+**Pacific Crest Trail**, *CA-OR-WA, USA*
 
 2015
 :   **Through Hiker** -- Trekked through the wilderness from the Mexican border near Campo, CA to the Canadian border north of Mazama, WA.
 
-**MidwayUSA, Inc.**, Columbia, MO
+**MidwayUSA, Inc.**, *Columbia, MO*
 
 2013-2015
 :   **Databse Administrator** -- Researched and executed a company-wide upgrade from SQL Server 2010 to SQL Server 2012. Determined requirements for and set up new servers and SQL Server installations. Migrated existing databases to new servers.
@@ -54,7 +54,7 @@ Experience
 
     Mapped the existing process and redesigned the entire credit card processing business process, replacing a system that has been in place for over a decade with a solution based on enabling reliable, durable processing of requests at a higher capacity.
 
-**Zeta-Meter, Inc.**, Staunton, VA
+**Zeta-Meter, Inc.**, *Staunton, VA*
 
 2006-2010
 :   **Embedded Engineer** -- Designed and implemented a Windows based data acquisition and analysis program in C#.

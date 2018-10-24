@@ -17,4 +17,3 @@ output/
 *.tuc
 tools/genhardcopy/resume.tex
 manifest
-resume-build-output.tar.gz

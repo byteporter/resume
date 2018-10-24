@@ -193,3 +193,11 @@ p {
 .application-about {
   font-size: .75rem
 }
+
+a {
+  color: #030303;
+}
+
+a:hover {
+  background-color: #e0e0e0;
+}

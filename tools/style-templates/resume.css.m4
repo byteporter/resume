@@ -125,7 +125,7 @@ blockquote {
 }
 
 body {
-  color: #__BODY_COLOR;
+  color: #__COLOR_BODY;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin: 0 auto;
@@ -142,7 +142,7 @@ h5,
 h6 {
   font-weight: 400;
   margin: .3em 0 0;
-  color: #__HEADER_COLOR;
+  color: #__COLOR_HEADER;
 }
 
 h1 {
@@ -193,4 +193,12 @@ p {
 
 .application-about {
   font-size: .75rem
+}
+
+a {
+  color: #__COLOR_LINK;
+}
+
+a:hover {
+  background-color: #__COLOR_LINK_HOVER;
 }

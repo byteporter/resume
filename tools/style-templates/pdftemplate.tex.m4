@@ -13,8 +13,8 @@ $endif$
 
 \setupcolor[hex]
 \definecolor[rulecolor][h=__COLOR_BREAK]
-\definecolor[sectioncolor][h=__HEADER_COLOR]
-\definecolor[contentcolor][h=__BODY_COLOR]
+\definecolor[sectioncolor][h=__COLOR_HEADER]
+\definecolor[contentcolor][h=__COLOR_BODY]
 
 % Enable hyperlinks
 \setupinteraction[state=start, color=contentcolor]
@@ -32,7 +32,7 @@ $endif$
 
 % === fonts
 \definefontfeature [default] [default] [onum=no]
-\definefontfamily [resume] [sans] [opensanslight] [bf=file:opensanssemibold]
+\definefontfamily [resume] [sans] [Open Sans Light] [bf=Open Sans]
 
 \setupbodyfont [resume, sans, 12pt]
 % ====== end fonts
