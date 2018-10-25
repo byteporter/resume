@@ -201,3 +201,7 @@ a {
 a:hover {
   background-color: #e0e0e0;
 }
+
+hr {
+  color: #d0d0d0;
+}

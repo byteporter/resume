@@ -11,7 +11,6 @@ $if(mainlang)$
 \mainlanguage[$mainlang$]
 $endif$
 
-\setupcolor[hex]
 \definecolor[rulecolor][h=__COLOR_BREAK]
 \definecolor[sectioncolor][h=__COLOR_HEADER]
 \definecolor[contentcolor][h=__COLOR_BODY]
@@ -22,7 +21,7 @@ $endif$
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
                  backspace=15mm, cutspace=0mm,
-                 topspace=10mm, bottomspace=20mm,
+                 topspace=10mm, bottomspace=10mm,
                  header=0mm, footer=0mm]
 
 % \unhyphenated
@@ -46,12 +45,12 @@ $endif$
 
 \setupblackrules[width=2.8in, height=1mm, color=rulecolor]
 
-\setuphead[section]      [style=\tfe, align=middle, color=sectioncolor]
-\setuphead[subsection]   [style=\tfd, align=flushleft,
-                          after={\blackrule\hspace}]
-\setuphead[subsubsection][style=\tfc, after={}]
-\setuphead[subsubsubsection][style=\tfb, before={}]
-\setuphead[subsubsubsubsection][style=\tfa]
+\setuphead[section]      [style=\bfe, align=middle, color=sectioncolor, after={\blank[nowhite]}, before={\blank[nowhite]}]
+\setuphead[subsection]   [style=\bfd, align=flushleft,
+                          after={\blackrule}]
+\setuphead[subsubsection][style=\bfc, after={}]
+\setuphead[subsubsubsection][style=\bfb]
+\setuphead[subsubsubsubsection][style=\bfa]
 
 $if(number-sections)$
 $else$
@@ -72,10 +71,9 @@ $endif$
 \setupfloat[figure][default={here,nonumber}]
 \setupfloat[table][default={here,nonumber}]
 
-\setuptables[textwidth=max, HL=none]
 \setupxtable[frame=off,option={stretch,width}]
 
-\setupthinrules[width=15em, color=rulecolor] % width of horizontal rules
+\setupthinrules[width=15em, color=rulecolor, height=0.1mm] % width of horizontal rules
 
 \setupdelimitedtext
   [blockquote]

@@ -202,3 +202,7 @@ a {
 a:hover {
   background-color: #__COLOR_LINK_HOVER;
 }
+
+hr {
+  color: #__COLOR_BREAK;
+}
