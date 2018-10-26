@@ -16,7 +16,7 @@ $endif$
 \definecolor[contentcolor][h=__COLOR_BODY]
 
 % Enable hyperlinks
-\setupinteraction[state=start, color=contentcolor]
+% \setupinteraction[state=start, color=contentcolor]
 
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
@@ -61,7 +61,7 @@ $endif$
 
 \definedescription
   [description]
-  [headstyle=bold, style=normal,
+  [headstyle=normal, style=normal,
    location=hanging, width=18mm, distance=14mm, margin=0cm]
 
 \setupitemize[autointro, packed]    % prevent orphan list intro
