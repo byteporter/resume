@@ -37,7 +37,7 @@ $endif$
 % ====== end fonts
 
 
-\setupwhitespace[medium]
+\setupwhitespace[small]
 
 \definefontsize[e]
 \definebodyfontenvironment[default][e=__H1_SIZE(),d=__H2_SIZE(),c=__H3_SIZE(),b=__H4_SIZE(),a=__H5_SIZE()]
@@ -45,12 +45,11 @@ $endif$
 
 \setupblackrules[width=2.8in, height=1mm, color=rulecolor]
 
-\setuphead[section]      [style=\bfe, align=middle, color=sectioncolor, after={\blank[nowhite]}, before={\blank[nowhite]}]
-\setuphead[subsection]   [style=\bfd, align=flushleft,
-                          after={\blackrule}]
-\setuphead[subsubsection][style=\bfc, after={}]
-\setuphead[subsubsubsection][style=\bfb]
-\setuphead[subsubsubsubsection][style=\bfa]
+\setuphead[section]             [style=\bfe, align=middle, color=sectioncolor, after={\blank[nowhite]}, before={\blank[nowhite]}]
+\setuphead[subsection]          [style=\bfd, align=flushleft, after={\blackrule}]
+\setuphead[subsubsection]       [style=\bfc, after={}]
+\setuphead[subsubsubsection]    [style=\bfb]
+\setuphead[subsubsubsubsection] [style=\bfa]
 
 $if(number-sections)$
 $else$
@@ -68,18 +67,27 @@ $endif$
 \setupitemize[autointro, packed]    % prevent orphan list intro
 \setupitemize[indentnext=no]
 
-\setupfloat[figure][default={here,nonumber}]
-\setupfloat[table][default={here,nonumber}]
-
-\setupxtable[frame=off,option={stretch,width}]
-
-\setupthinrules[width=15em, color=rulecolor, height=0.1mm] % width of horizontal rules
-
 \setupdelimitedtext
   [blockquote]
   [before={\setupalign[middle]},
    indentnext=no,
   ]
+
+% \setupfloat[figure][default={here,nonumber}]
+% \setupfloat[table][default={here,nonumber}]
+
+% No clue why 'location=bottom' is needed to center this, there is no useful documentation to be found on \setupxtable. Seems to follow the same format
+% as framed or maybe floats though? This was mostly trial and error. 'offset=none' is also important.
+\setupxtable[frame=off,location=bottom,offset=none,option={stretch,width}]
+
+% Showing boxes helps with debugging the layout
+% \showboxes
+
+% pandoc outputs \thinrule for horizontal rules but these are on the baseline. I want it on the middle so I overrode the built-in to use \textrule instead
+% VERY hacky but I don not know of a better way at this time
+
+\setuptextrules[rulecolor=rulecolor, rulethickness=.2mm]
+\redefine\thinrule{\textrule[middle]{}}
 
 $if(toc)$
 \setupcombinedlist[content][list={$placelist$}]
