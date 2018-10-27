@@ -20,11 +20,11 @@ $endif$
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
                  backspace=15mm, cutspace=0mm,
-                 topspace=10mm, bottomspace=10mm,
+                 topspace=15mm, bottomspace=15mm,
                  header=0mm, footer=0mm]
 
-% \unhyphenated
-% \setupalign [verytolerant,stretch]
+\unhyphenated
+\setupalign [verytolerant,stretch]
 
 %\setuppagenumbering[location={footer,center}]
 
@@ -32,7 +32,7 @@ $endif$
 \definefontfeature [default] [default] [onum=no]
 \definefontfamily [resume] [sans] [Open Sans Light] [bf=Open Sans]
 
-\setupbodyfont [resume, sans, 12pt]
+\setupbodyfont [resume, sans, 11pt]
 % ====== end fonts
 
 
@@ -42,7 +42,7 @@ $endif$
 \definebodyfontenvironment[default][e=3,d=2,c=1.5,b=1.167,a=1]
 \setupcolors[textcolor=contentcolor]
 
-\setupblackrules[width=2.8in, height=1mm, color=rulecolor]
+\setupblackrules[width=71mm, height=1mm, color=rulecolor]
 
 \setuphead[section]             [style=\bfe, align=middle, color=sectioncolor, after={\blank[nowhite]}, before={\blank[nowhite]}]
 \setuphead[subsection]          [style=\bfd, align=flushleft, after={\blackrule}]
