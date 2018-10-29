@@ -49,9 +49,21 @@ func (vh resourceFileHandler) ServeHTTP(w http.ResponseWriter, req *http.Request
 func (rh resumeHandler) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	b, _ := ioutil.ReadFile(`resume.md`)
 	var output = blackfriday.Run(b)
+
+	s, _ := ioutil.ReadFile(`static-root/resources/resume.min.css`)
+
 	t, _ := template.ParseFiles("templates/resume.gohtml")
+
+	templateData := struct {
+		Body  template.HTML
+		Style template.CSS
+	}{
+		template.HTML(output),
+		template.CSS(s),
+	}
+
 	w.Header().Set("Vary", "Accept-Encoding")
-	t.Execute(w, template.HTML(output))
+	t.Execute(w, templateData)
 }
 
 func main() {

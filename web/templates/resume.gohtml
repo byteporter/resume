@@ -13,15 +13,17 @@
 <meta name="description" content="Professional resume of James Lind, experienced polyglot developer. Skilled in SQL Server, .NET, C#, REST Services, Php, Javascript, HTML, CSS and more.">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{{ .Style }}
+</style>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="resources/resume.min.css" media="jlind-null" onload="this.media='all'">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" media="jlind-null" onload="this.media='all'">
 <title>James Lind - Software Developer</title>
 </head>
 <body>
 <div class=markdown-body>
-{{.}}
+{{ .Body }}
 <h6>About this page</h6>
 <p class=application-about>
 This page is generated on each load from a markdown version of my resume by a custom microservice written by myself in Go. You can view the source for this web page on <a href=https://github.com/byteporter/jameslind_info>github</a>.
