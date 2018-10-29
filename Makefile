@@ -6,10 +6,6 @@ PAPER_SIZE ?= letter
 INSTALL_DIR ?= output/usr/share/resume/
 BIN_DIR ?= output/go/bin/
 
-ifeq ($(shell echo `pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`), 2)
-	PANDOC_VERSION_2 := true
-endif
-
 # Terminal color control strings
 RED=\e[1;31m
 GRN=\e[1;32m
