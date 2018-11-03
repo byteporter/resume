@@ -27,11 +27,11 @@ Experience
 **Innovative Refrigeration Systems**, *Lyndhurst, VA*
 
 2016-2017
-:   **Web Developer** -- Developed a REST service managing users, permissions, authorization, and authentication. Written in Laravel Lumen slim framework on a LAMP stack.
+:   **Web Developer** -- Simplified and standardized login across legacy applications by developing a REST service managing users, permissions, authorization, and authentication.
 
-    Developed business reports incorporating data from both MySQL application databases and a Microsoft SQL database hosting proprietary data.
+    Enabled better business decisions with less time commitment from management by incorporating data from in-house applications and Epicor into easily consumed reports.
 
-    As the most experienced member of the team, I worked hard to teach newer developers best practices in both technical and career skills.
+    Advocated best practices and modern DevOps within department by researching available tools and teaching other developers.
 
 **Pacific Crest Trail**, *CA-OR-WA, USA*
 

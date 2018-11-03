@@ -6,6 +6,9 @@ PAPER_SIZE ?= letter
 INSTALL_DIR ?= output/usr/share/resume/
 BIN_DIR ?= output/go/bin/
 
+GOOS ?= linux
+GOARCH ?= amd64
+
 # Terminal color control strings
 RED=\e[1;31m
 GRN=\e[1;32m
@@ -64,6 +67,11 @@ clean:
 	rm resume ||:
 	@printf "$(GRN)Done!$(END)\n\n"
 
+resume: cmd/resume/resume.go
+	@printf "$(BLU)***Building application $(CYN)$@$(BLU)...$(END)\n"
+	CGO_ENABLED=0 GOOS=$(GOOS) GOARCH=$(GOARCH) go build -a -ldflags '-extldflags "-static"' -o $@ $^
+	@printf "$(GRN)***Done!$(END)\n\n"
+
 # Uncomment this if you need to keep the .tex file for inspection
 # .PRECIOUS: tools/genhardcopy/resume.tex
 
@@ -80,11 +88,6 @@ web/static-root/resources/resume.min.css: tools/style-templates/resume.css
 tools/genhardcopy/pdftemplate.tex: tools/style-templates/pdftemplate.tex.m4 tools/style-templates/shared-style-config.m4
 	@printf "$(BLU)***Building $(CYN)$@$(BLU)...$(END)\n"
 	m4 -P -I$(dir $<) $(notdir $<) >/tmp/$(notdir $@) && cp /tmp/$(notdir $@) $@
-	@printf "$(GRN)***Done!$(END)\n\n"
-
-resume: cmd/resume/resume.go
-	@printf "$(BLU)***Building application $(CYN)$@$(BLU)...$(END)\n"
-	CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' -o $@ $^
 	@printf "$(GRN)***Done!$(END)\n\n"
 
 tools/genhardcopy/resume.tex: tools/genhardcopy/pdftemplate.tex web/resume.md
