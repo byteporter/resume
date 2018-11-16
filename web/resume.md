@@ -47,10 +47,10 @@ Experience
 
     Updated legacy SQL jobs to work properly with the redundant databases required for Availability Groups.
 
-    Worked directly with Application Developers to collect and analyze business requirements, design data structures, and write high performing, reliable, and accurate stored procedures which the Application Developers then utilized from their applications.
+    Worked directly with Application Developers to collect and analyze business requirements, design data structures, and write high performing, reliable, and accurate stored procedures to implement the data layer of applications.
 
 2010-2013
-:   **Application Developer** -- Created and maintained backend services to provide data for frontend developers.
+:   **Application Developer** -- Created and maintained back end services to provide data for frontend developers.
 
     Mapped the existing process and redesigned the entire credit card processing business process, replacing a system that has been in place for over a decade with a solution based on enabling reliable, durable processing of requests at a higher capacity.
 
@@ -59,19 +59,26 @@ Experience
 2006-2010
 :   **Embedded Engineer** -- Designed and implemented a Windows based data acquisition and analysis program in C#.
 
-    Designed the electrical circuit and authored software for a scientific instrument whichuses a Freescale HCS12 microcontroller.
+    Designed the electrical circuit and authored software for a scientific instrument which uses a Freescale HCS12 microcontroller.
 
 Skills
 ------
 
-#### Polyglot
+**General**
 
-Professional experience with Assembly (PIC and Freescale microcontrollers), C, C++, C# .NET, T-SQL, MySQL, PHP, JavaScript, CSS, Bash, POSIX shell, and PowerShell. Personal experience with many others. Always excited to learn more.
+:   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration  
 
-#### Specific Solutions and Software Packages
+**Languages**
 
-Linux-Apache-MySQL-PHP (LAMP) stack: Laravel, its lightweight subset Lumen, and CodeIgniter. DevOps and Infrastructure: Docker, Kubernetes, CoreOS, Terraform, Typhoon, and Vagrant. Microsoft SQL Server: general administration, SQL Server Reporting Services (SSRS) based reports, SQL Server Integration Services (SSIS) jobs. Splunk and Datadog for monitoring. Microsoft Silverlight, WPF, MVC, DirectX, and WCF Services. FreeRTOS real time operating system for embedded controllers.
+:   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, JavaScript, CSS, Bash and POSIX Shell, PowerShell, Make, M4 Templating  
 
-#### Areas of Focus
+**Frameworks**
 
-Writing clean and understandable code, documentation, requirements gathering, standards, DevOps, continuous delivery and integration, and automated testing.
+:   WinForms, WPF, Silverlight, WCF Services, Laravel, Lumen, CodeIgniter, DirectX  
+
+**Tools**
+
+:  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, Datadog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache  
+
+**Operating Systems**
+:  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS
