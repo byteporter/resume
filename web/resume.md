@@ -66,19 +66,19 @@ Skills
 
 **General**
 
-:   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration  
+:   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration, Version Control, Cryptography, API Design
 
 **Languages**
 
-:   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, JavaScript, CSS, Bash and POSIX Shell, PowerShell, Make, M4 Templating  
+:   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, Java, Go, PERL, JavaScript, CSS, Bash and POSIX Shell, PowerShell, awk, Make, M4
 
 **Frameworks**
 
-:   WinForms, WPF, Silverlight, WCF Services, Laravel, Lumen, CodeIgniter, DirectX  
+:   WinForms, WPF, Silverlight, REST, WCF Services, Laravel, Lumen, CodeIgniter, DirectX,
 
 **Tools**
 
-:  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, Datadog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache  
+:  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, DataDog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache, QEMU/KVM, LXC, XenServer, FreeBSD Jails, ZFS, Rkt, Trello
 
 **Operating Systems**
 :  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS

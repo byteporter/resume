@@ -9,6 +9,7 @@
 {{ .Style }}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"  media="print" onload="this.media='all'">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,9 +26,11 @@
 <body>
 <div class=markdown-body>
 {{ .Body }}
+</div>
+<div class="application-about">
 <h6>About this page</h6>
-<p class=application-about>
-This page is generated on each load from a markdown version of my resume by a custom microservice written by myself in Go. You can view the source for this web page on <a href=https://github.com/byteporter/jameslind_info>github</a>.
+<p>
+<span style="white-space: nowrap;"><i class="fab fa-github" style="font-size: 1.2em;"></i> <a href=https://github.com/byteporter/jameslind_info>byteporter/jameslind_info</a></span>
 </p>
 </div>
 </body>
