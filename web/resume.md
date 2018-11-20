@@ -70,7 +70,7 @@ Skills
 
 **Languages**
 
-:   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, Java, Go, PERL, JavaScript, CSS, Bash and POSIX Shell, PowerShell, awk, Make, M4
+:   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, Java, Go, PERL, JavaScript, CSS, Bash and POSIX Shell, PowerShell, F#, awk, Make, M4
 
 **Frameworks**
 
