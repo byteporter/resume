@@ -176,22 +176,26 @@ thead {
   display: none;
 }
 
-dt {
-  width: 15%;
-  float: left;
-  clear: left;
-}
+@media (min-width: 43.75em) {
+  dt {
+    width: 15%;
+    float: left;
+    clear: left;
+  }
 
-dd {
-  margin-left: 15%;
-}
+  dd {
+    margin-left: 15%;
+  }
+} 
 
 p {
   margin: 1em 0;
 }
 
 .application-about {
-  font-size: .75rem
+  clear: both;
+  font-size: .75rem;
+  text-align: center;
 }
 
 a {
