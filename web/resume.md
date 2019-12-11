@@ -41,7 +41,7 @@ Experience
 **MidwayUSA, Inc.**, *Columbia, MO*
 
 2013-2015
-:   **Databse Administrator** -- Researched and executed a company-wide upgrade from SQL Server 2010 to SQL Server 2012. Determined requirements for and set up new servers and SQL Server installations. Migrated existing databases to new servers.
+:   **Database Administrator** -- Researched and executed a company-wide upgrade from SQL Server 2010 to SQL Server 2012. Determined requirements for and set up new servers and SQL Server installations. Migrated existing databases to new servers.
 
     Researched and implemented a solution using Availability Groups to greatly increase database performance, availability, and reliability.
 
