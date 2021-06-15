@@ -22,9 +22,10 @@ Experience
 **Independent**, *Houston, TX; Mount Sidney, VA*
 
 2019-2021
-:   **Designer / Developer** -- Created an all-new website for the Steel Utility Pole Coalition, a non-profit industry advocate for steel infrastructure. Design is based on the Bootstrap framework and implemented using the Hugo static site builder with Node tools for post-processing CSS and JS resources. Developed to be deployment agnostic, it was tested using my VPS server but is deployed with Netlify.
+:   **Research and Development** -- Independent study into various fields including electronics design and small-scale production, additive manufacturing, signal processing, computer vision and edge AI.
 
-**Research and Development** -- Independent study into various fields including electronics design and small-scale production, additive manufacturing, signal processing, computer vision and edge AI.
+2019-2020
+:   **Designer / Developer** -- Created an all-new website for the Steel Utility Pole Coalition, a non-profit industry advocate for steel infrastructure. Design is based on the Bootstrap framework and implemented using the Hugo static site builder with Node tools for post-processing CSS and JS resources. Developed to be deployment agnostic, it was tested using my VPS server but is deployed with Netlify.
 
 **Black Beard Labs (formerly Veteran Studio)**, *Waynesboro, VA*
 
