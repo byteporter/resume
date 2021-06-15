@@ -5,8 +5,8 @@ James Lind
 
 |                                                         |                                                        |
 | ------------------------------------------------------- | -----------------------------------------------------: |
-| [james@byteporter.com](mailto:james@byteporter.com)     |                                 2300 Old Spanish Trail |
-| [https://jameslind.info](https://jameslind.info)        |                                      Houston, TX 77054 |
+| [james@byteporter.com](mailto:james@byteporter.com)     |                                  253 Morningside Drive |
+| [https://jameslind.info](https://jameslind.info)        |                                 Mount Sidney, VA 24467 |
 
 ----------------
 
@@ -18,6 +18,13 @@ Education
 
 Experience
 ----------
+
+**Independent**, *Houston, TX; Mount Sidney, VA*
+
+2019-2021
+:   **Designer / Developer** -- Created an all-new website for the Steel Utility Pole Coalition, a non-profit industry advocate for steel infrastructure. Design is based on the Bootstrap framework and implemented using the Hugo static site builder with Node tools for post-processing CSS and JS resources. Developed to be deployment agnostic, it was tested using my VPS server but is deployed with Netlify.
+
+**Research and Development** -- Independent study into various fields including electronics design and small-scale production, additive manufacturing, signal processing, computer vision and edge AI.
 
 **Black Beard Labs (formerly Veteran Studio)**, *Waynesboro, VA*
 
@@ -68,17 +75,21 @@ Skills
 
 :   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration, Version Control, Cryptography, API Design
 
+**Production and Prototyping**
+
+:   Printed circuit board design, fabrication, and assembly
+
 **Languages**
 
 :   C, C++, C# .Net, SQL (Microsoft T-SQL and MySQL), Assembly (various architectures), PHP, Java, Go, PERL, JavaScript, CSS, Bash and POSIX Shell, PowerShell, F#, awk, Make, M4
 
 **Frameworks**
 
-:   WinForms, WPF, Silverlight, REST, WCF Services, Laravel, Lumen, CodeIgniter, DirectX,
+:   WinForms, WPF, Silverlight, REST, WCF Services, Laravel, Lumen, CodeIgniter, DirectX
 
 **Tools**
 
 :  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, DataDog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache, QEMU/KVM, LXC, XenServer, FreeBSD Jails, ZFS, Rkt, Trello
 
 **Operating Systems**
-:  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS
+:  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS, NetBSD
