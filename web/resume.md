@@ -6,7 +6,7 @@ James Lind
 |                                                         |                                                        |
 | ------------------------------------------------------- | -----------------------------------------------------: |
 | [james@byteporter.com](mailto:james@byteporter.com)     |                                  253 Morningside Drive |
-| [https://jameslind.info](https://jameslind.info)        |                                 Mount Sidney, VA 24467 |
+| [https://resume.byteporter.com](https://resume.byteporter.com)        |                                 Mount Sidney, VA 24467 |
 
 ----------------
 
@@ -19,13 +19,20 @@ Education
 Experience
 ----------
 
+**Raven Scientific**, *Waynesboro, VA*
+
+2022-present
+:   **Consultant** -- Work with clients to solve general engineering challenges related to software and hardware. Worked with client to design Point-of-Sale unit for laundromats based on NXP i.MX6 ARM application SoC running Linux.
+
 **Independent**, *Houston, TX; Mount Sidney, VA*
 
 2019-2021
-:   **Research and Development** -- Independent study into various fields including electronics design and small-scale production, additive manufacturing, signal processing, computer vision and edge AI.
+:   **Research and Development** -- Independent study into various fields including electronics design and small-scale production, additive manufacturing, signal processing, computer vision and edge AI. Used ESP32 and its IDF SDK for several projects including an IoT RGB LED lamp and an NTSC composite color video generator.
+
+    Experimented with the Sipeed MAix RISC-V based AI SoC to do image classification from a VGA video stream at 30fps.
 
 2019-2020
-:   **Designer / Developer** -- Created an all-new website for the Steel Utility Pole Coalition, a non-profit industry advocate for steel infrastructure. Design is based on the Bootstrap framework and implemented using the Hugo static site builder with Node tools for post-processing CSS and JS resources. Developed to be deployment agnostic, it was tested using my VPS server but is deployed with Netlify.
+:   **Designer / Developer** -- Created an all-new website for the Steel Utility Pole Coalition, a non-profit industry advocate for steel infrastructure.
 
 **Black Beard Labs (formerly Veteran Studio)**, *Waynesboro, VA*
 
@@ -36,8 +43,6 @@ Experience
 
 2016-2017
 :   **Web Developer** -- Simplified and standardized login across legacy applications by developing a REST service managing users, permissions, authorization, and authentication.
-
-    Enabled better business decisions with less time commitment from management by incorporating data from in-house applications and Epicor into easily consumed reports.
 
     Advocated best practices and modern DevOps within department by researching available tools and teaching other developers.
 
@@ -51,30 +56,26 @@ Experience
 2013-2015
 :   **Database Administrator** -- Researched and executed a company-wide upgrade from SQL Server 2010 to SQL Server 2012. Determined requirements for and set up new servers and SQL Server installations. Migrated existing databases to new servers.
 
-    Researched and implemented a solution using Availability Groups to greatly increase database performance, availability, and reliability.
-
-    Updated legacy SQL jobs to work properly with the redundant databases required for Availability Groups.
-
     Worked directly with Application Developers to collect and analyze business requirements, design data structures, and write high performing, reliable, and accurate stored procedures to implement the data layer of applications.
 
 2010-2013
 :   **Application Developer** -- Created and maintained back end services to provide data for frontend developers.
-
-    Mapped the existing process and redesigned the entire credit card processing business process, replacing a system that has been in place for over a decade with a solution based on enabling reliable, durable processing of requests at a higher capacity.
 
 **Zeta-Meter, Inc.**, *Staunton, VA*
 
 2006-2010
 :   **Embedded Engineer** -- Designed and implemented a Windows based data acquisition and analysis program in C#.
 
-    Designed the electrical circuit and authored software for a scientific instrument which uses a Freescale HCS12 microcontroller.
+    Designed the electrical circuit and authored software for a scientific instrument which uses a Freescale HCS12 microcontroller. This solution used FreeRTOS and the CodeWarrior C IDE for writing and debugging. The companion data acquisition software was written in C# .NET and used a MS SQL file-backed database to store the data.
+
+    Standout achievements were a fully custom display driver to run the graphical LCD including bitmap fonts, and using Direct3D to draw the graphs in the companion application quickly and smoothly using the GPU. Custom routines were also created to ensure that the hard copy printouts of the charts were perfect.
 
 Skills
 ------
 
 **General**
 
-:   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration, Version Control, Cryptography, API Design
+:   Clean Code, Organization, Communication, Requirements Gathering, Collaborative Design, Documentation, Automated Testing, Continuous Integration / Delivery, DevOps, Database Administration, Version Control, Cryptography, API Design, Radio, Analog
 
 **Production and Prototyping**
 
@@ -86,11 +87,11 @@ Skills
 
 **Frameworks**
 
-:   WinForms, WPF, Silverlight, REST, WCF Services, Laravel, Lumen, CodeIgniter, DirectX
+:   WinForms, WPF, Silverlight, REST, WCF Services, Laravel, Lumen, CodeIgniter, DirectX, ESP IDF, NodeMCU
 
 **Tools**
 
-:  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, DataDog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache, QEMU/KVM, LXC, XenServer, FreeBSD Jails, ZFS, Rkt, Trello
+:  Docker, Kubernetes (Typhoon), CoreOS, Terraform, Vagrant, Splunk, DataDog, SQL Server Reporting Services (SRSS), SQL Server Integration Services (SSIS), NGINX, Apache, QEMU/KVM, LXC, XenServer, FreeBSD Jails, ZFS, Rkt, Trello, KiCAD, SketchUp
 
 **Operating Systems**
-:  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS, NetBSD
+:  Windows, Linux, FreeBSD, OpenBSD, FreeRTOS, NetBSD, NuttX
